@@ -3,11 +3,11 @@ import { useDispatch } from "react-redux";
 import { removeItem } from "../utils/cartSlice";
 
 const CartItems = (props) => {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-  // const handleRemoveItem = (id) => {
-  //   dispatch(removeItem(id));
-  // };
+  const handleRemoveItem = (id) => {
+    dispatch(removeItem(id));
+  };
 
   return (
     <div>
@@ -29,7 +29,12 @@ const CartItems = (props) => {
           </div>
         </div>
 
-        <button>
+        <button
+          className="p-2 bg-red-400 hover:bg-red-600 hover:shadow-md rounded-full text-white"
+          onClick={() => {
+            handleRemoveItem(props?.info?.id);
+          }}
+        >
           <FiTrash2 />
         </button>
       </div>

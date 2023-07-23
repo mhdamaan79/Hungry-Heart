@@ -15,6 +15,7 @@ const RestaurantItemCard = (props) => {
   }, []);
 
   const handleAddItem = (item) => {
+    // console.log(item)
     dispatch(addItem(item));
   };
 
