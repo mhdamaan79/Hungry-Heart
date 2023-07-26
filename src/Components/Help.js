@@ -15,7 +15,7 @@ const Help = () => {
           </div>
         </div>
 
-        <div className="mx-6 flex flex-wrap shadow-[inset_0px_20px_20px_1000px_#cbd5e0] px-4 pt-6">
+        <div className="mx-6 flex flex-wrap shadow-xl px-4 pt-6">
           <div className="w-full px-4 lg:w-1/2">
             <AccordionItem
               header="Do you offer vegetarian options?"
@@ -75,7 +75,7 @@ const AccordionItem = ({ header, text }) => {
     setActive(!active);
   };
   return (
-    <div className="single-faq mb-8 w-full rounded-lg border border-[#F3F4FE] bg-white p-4 sm:p-8 lg:px-6 xl:px-8">
+    <div className="single-faq mb-8 w-full rounded-lg border-4 border-x-orange-500 border-y-orange-300 bg-white p-4 sm:p-8 lg:px-6 xl:px-8 shadow-md">
       <button
         className={`faq-btn flex w-full text-left`}
         onClick={() => handleToggle()}
