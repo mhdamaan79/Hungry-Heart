@@ -40,7 +40,12 @@ const Body = () => {
 
   if (onlineStatus === false) {
     return (
-      <h1>Looks like you're offline!! Please check your internet connection</h1>
+      <div className="flex justify-center items-center">
+        <h1 className="bg-orange-400 py-4 mx-8 my-4 inline-block px-6 text-xl font-semibold rounded-md">
+          Oops! It seems like you're currently offline. Please take a moment to
+          check your internet connection.
+        </h1>
+      </div>
     );
   }
 
