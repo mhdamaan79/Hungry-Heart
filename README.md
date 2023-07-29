@@ -24,6 +24,7 @@
 -  Shimmer UI for better user experience
 -  Used Swiggy public API for Restaurants data
 -  Search restaurants by name
+-  Get restaurants by top-rated and delivery time-based filter
 -  Cart Feature Add Remove Item From Cart
 -  Checking network connection using Custom Hook
 -  Responsive for the small screen
