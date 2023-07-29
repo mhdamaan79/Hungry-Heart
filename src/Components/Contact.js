@@ -76,10 +76,10 @@ const Contact = () => {
             <div class="mb-2 py-2">
               <button type="submit">
                 <a
-                  href="#_"
+                  href="/"
                   class="rounded relative inline-flex group items-center justify-center px-3.5 py-2 mt-2 cursor-pointer border-b-4 border-l-2 active:border-purple-600 active:shadow-none shadow-lg bg-gradient-to-tr from-purple-600 to-purple-500 border-purple-700 text-white"
                 >
-                  <span class="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-32 group-hover:h-32 opacity-10"></span>
+                  <span class="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-16 group-hover:h-16 sm:group-hover:w-20 sm:group-hover:h-20 md:group-hover:w-24 md:group-hover:h-24 lg:group-hover:w-32 lg:group-hover:h-32 opacity-10"></span>
                   <span class="relative">Submit</span>
                 </a>
               </button>

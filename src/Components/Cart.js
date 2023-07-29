@@ -92,7 +92,7 @@ const Cart = () => {
           )}
         </div>
       ) : (
-        <div className="flex flex-col justify-center items-center gap-4 mt-4 mb-24 md:mb-32">
+        <div className="flex flex-col justify-center items-center gap-4 mt-4 mb-16 md:mb-24">
           <img
             className="scale-105 md:scale-125 h-72 md:h-96 p-2"
             src={EmptyCart}
@@ -109,7 +109,8 @@ const Cart = () => {
               class="middle none center rounded-lg bg-orange-500 py-2 md:py-4 px-4 md:px-8 font-sans text-base md:text-xl sm:font-semibold md:font-bold text-white shadow-md shadow-orange-500/20 transition-all hover:shadow-lg hover:shadow-orange-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none md-2 md:m-4"
               data-ripple-light="true"
             >
-              See Restaurants near you
+              See Restaurants near you{" "}
+              <i className="fa-solid fa-cart-shopping px-2"></i>
             </button>
           </Link>
         </div>
