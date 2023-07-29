@@ -24,7 +24,7 @@ const Header = () => {
   console.log(cartItems);
 
   return (
-    <div className="flex justify-start sm:justify-between items-center shadow-xl bg-gradient-to-r from-lime-500 via-lime-300 to-lime-500 rounded-lg m-4 sticky top-0 scroll-mx-0 z-50">
+    <div className="flex justify-between items-center shadow-xl bg-gradient-to-r from-lime-500 via-lime-300 to-lime-500 rounded-lg m-4 sticky top-0 scroll-mx-0 z-50">
       <Title />
       <div className="nav font-semibold text-xs lg:text-lg md:text-md xl:text-2xl">
         <ul className="flex py-2 gap-1 md:gap-2 lg:gap-4 font-normal transition-all duration-150">
@@ -65,7 +65,7 @@ const Header = () => {
       <div className="flex max-sm:pl-2 sm:gap-3 md:gap-6 lg:gap-12 justify-start items-center">
         <a
           href="#_"
-          class="hidden sm:visible sm:p-1 md:px-2.5 md:py-1.5 lg:px-5 lg:py-2.5 font-medium bg-white text-blue-500 rounded-lg text-sm cursor-default"
+          class="max-sm:hidden sm:visible sm:p-1 md:px-2.5 md:py-1.5 lg:px-5 lg:py-2.5 font-medium bg-white text-blue-500 rounded-lg text-sm cursor-default"
         >
           {isOnline ? "✅ " + "Online" : "🔴 " + "Offline"}
         </a>
@@ -76,7 +76,7 @@ const Header = () => {
               onClick={() => {
                 setIsLoggedIn(true);
               }}
-              className="text-xs sm:text-sm md:text-md lg:text-2xl font-semibold mr-2 lg:mr-4"
+              className="text-xs sm:text-sm md:text-md lg:text-2xl font-semibold mr-2 sm:mr-4"
             >
               <a
                 href="#_"
@@ -95,7 +95,7 @@ const Header = () => {
               onClick={() => {
                 setIsLoggedIn(false);
               }}
-              className="text-xs sm:text-sm md:text-md lg:text-2xl font-semibold mr-2 lg:mr-4"
+              className="text-xs sm:text-sm md:text-md lg:text-2xl font-semibold mr-2 sm:mr-4"
             >
               <a
                 href="#_"
