@@ -95,10 +95,10 @@ const Header = () => {
             >
               <a
                 href="#_"
-                class="rounded relative inline-flex group items-center justify-center p-1 sm:p-2 lg:py-2 lg:m-1 cursor-pointer border-b-4 border-l-2 active:border-green-600 active:shadow-none shadow-lg bg-gradient-to-tr from-lime-600 to-lime-500 border-lime-700 text-white"
+                className="rounded relative inline-flex group items-center justify-center p-1 sm:p-2 lg:py-2 lg:m-1 cursor-pointer border-b-4 border-l-2 active:border-green-600 active:shadow-none shadow-lg bg-gradient-to-tr from-lime-600 to-lime-500 border-lime-700 text-white"
               >
-                <span class="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-16 group-hover:h-16 sm:group-hover:w-20 sm:group-hover:h-20 md:group-hover:w-24 md:group-hover:h-24 lg:group-hover:w-32 lg:group-hover:h-32 opacity-10"></span>
-                <span class="relative flex justify-center items-center gap-2">
+                <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-16 group-hover:h-16 sm:group-hover:w-20 sm:group-hover:h-20 md:group-hover:w-24 md:group-hover:h-24 lg:group-hover:w-32 lg:group-hover:h-32 opacity-10"></span>
+                <span className="relative flex justify-center items-center gap-2">
                   Login <HiOutlineArrowNarrowRight />
                 </span>
               </a>
@@ -114,10 +114,10 @@ const Header = () => {
             >
               <a
                 href="#_"
-                class="rounded relative inline-flex group items-center justify-center p-1 sm:p-2 lg:px-3.5 lg:py-2 lg:m-1 cursor-pointer border-b-4 border-l-2 active:border-red-600 active:shadow-none shadow-lg bg-gradient-to-tr from-orange-600 to-orange-500 border-orange-700 text-white"
+                className="rounded relative inline-flex group items-center justify-center p-1 sm:p-2 lg:px-3.5 lg:py-2 lg:m-1 cursor-pointer border-b-4 border-l-2 active:border-red-600 active:shadow-none shadow-lg bg-gradient-to-tr from-orange-600 to-orange-500 border-orange-700 text-white"
               >
-                <span class="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-16 group-hover:h-16 sm:group-hover:w-20 sm:group-hover:h-20 md:group-hover:w-24 md:group-hover:h-24 lg:group-hover:w-32 lg:group-hover:h-32 opacity-10"></span>
-                <span class="relative flex justify-center items-center gap-2">
+                <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-16 group-hover:h-16 sm:group-hover:w-20 sm:group-hover:h-20 md:group-hover:w-24 md:group-hover:h-24 lg:group-hover:w-32 lg:group-hover:h-32 opacity-10"></span>
+                <span className="relative flex justify-center items-center gap-2">
                   Logout <HiOutlineArrowNarrowRight />
                 </span>
               </a>

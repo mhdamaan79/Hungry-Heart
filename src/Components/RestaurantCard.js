@@ -11,15 +11,6 @@ function RestaurantCard({
   costForTwo,
   avgRatingString,
 }) {
-  // console.log(
-  //   cloudinaryImageId,
-  //   name,
-  //   cuisines,
-  //   areaName,
-  //   sla,
-  //   costForTwo,
-  //   avgRatingString
-  // );
   return (
     <div className="w-60 h-80 p-3 m-6 shadow-xl bg-white hover:shadow-stone-300 transition ease-in-out delay-50 hover:scale-110 duration-200 rounded-md">
       <img src={IMG_CDN_URL + cloudinaryImageId} className="rounded-md" />
