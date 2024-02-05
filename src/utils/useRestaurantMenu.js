@@ -6,7 +6,7 @@ const useRestaurantMenu = (resId) => {
 
   useEffect(() => {
     getRestaurantInfo();
-  }, []);
+  }, [resId]);
 
   async function getRestaurantInfo() {
     try {
@@ -14,7 +14,7 @@ const useRestaurantMenu = (resId) => {
       const json = await data.json();
       // console.log(json.data);
       const itemCards =
-        json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card
+        json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card
           ?.card?.itemCards;
       setRestaurantList(itemCards);
     } catch (error) {

@@ -28,7 +28,7 @@ const Body = () => {
           ?.restaurants
       );
       setFilteredRestaurants(
-        json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+        json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants
       );
     } catch (error) {
