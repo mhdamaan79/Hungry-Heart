@@ -44,32 +44,32 @@ const Header = () => {
           onClick={() => setIsMenuOpen(false)}
         >
           <Link to="/">
-            <li className="px-2 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer active">
+            <li className="px-2 border-b-2 border-yellow-50 border-opacity-0 hover:border-opacity-100 text-zinc-800 hover:text-white font-semibold hover:duration-200 cursor-pointer active">
               Home
             </li>
           </Link>
           <Link to="/about">
-            <li className="px-2 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer active">
+            <li className="px-2 border-b-2 border-yellow-50 border-opacity-0 hover:border-opacity-100 text-zinc-800 hover:text-white font-semibold hover:duration-200 cursor-pointer active">
               About
             </li>
           </Link>
           <Link to="/contact">
-            <li className="px-2 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer active">
+            <li className="px-2 border-b-2 border-yellow-50 border-opacity-0 hover:border-opacity-100 text-zinc-800 hover:text-white font-semibold hover:duration-200 cursor-pointer active">
               Contact
             </li>
           </Link>
           <Link to="/instamart">
-            <li className="px-2 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer active">
+            <li className="px-2 border-b-2 border-yellow-50 border-opacity-0 hover:border-opacity-100 text-zinc-800 hover:text-white font-semibold hover:duration-200 cursor-pointer active">
               Instamart
             </li>
           </Link>
           <Link to="/help">
-            <li className="px-2 border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer active">
+            <li className="px-2 border-b-2 border-yellow-50 border-opacity-0 hover:border-opacity-100 text-zinc-800 hover:text-white font-semibold hover:duration-200 cursor-pointer active">
               Help
             </li>
           </Link>
           <Link to="/cart">
-            <li className="border-b-2 border-green-500 border-opacity-0 hover:border-opacity-100 hover:text-green-500 duration-200 cursor-pointer active">
+            <li className="border-b-2 border-yellow-50 border-opacity-0 hover:border-opacity-100 text-zinc-800 hover:text-white font-semibold hover:duration-200 cursor-pointer active">
               <i className="fa-solid fa-cart-shopping px-2"></i>
               Cart - {cartItems.length} items
             </li>
