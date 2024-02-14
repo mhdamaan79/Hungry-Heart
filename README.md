@@ -1,23 +1,14 @@
 # 💜 Hungry Heart 💜
 Hungry Heart is a React JS based online food ordering website that utilizes Swiggy's public API to provide users with a diverse range of restaurant options. With a focus on seamless user experience, the website features a Shimmer UI for smooth loading, lazy loading for efficient content delivery, and responsive design for optimal performance on small screens. Users can easily search for restaurants by name and apply top-rated or delivery time-based filters for personalized results. The Cart feature enables users to effortlessly add and remove items from their order. Additionally, a custom hook monitors the user's internet connectivity, ensuring a smooth browsing experience whether online or offline.
 
-<br>
-
-## 📌 Live Site URL: <a href="https://hungry-heart-git-master-mhdamaan79.vercel.app/">**Visit Now** 🚀</a>
-✨ "Feeding Souls, Nourishing Hearts: Hungry Heart's Culinary Art! 
-
-<br>
-
 ## ⚙️ Tech Stack used:
 
--  React js as a UI library
--  Redux toolkit for state management
--  Parcel for bundling
--  Babel as a JavaScript transpiler
--  React router-V6 for routing
--  Tailwind CSS for styling
-
-<br>
+-  **React js** as a UI library
+-  **Redux toolkit** for state management
+-  **Parcel** for bundling
+-  **Babel** as a JavaScript transpiler
+-  **React router-V6** for routing
+-  **Tailwind CSS** for styling
 
 ## 😎 Key Features
 
@@ -30,7 +21,8 @@ Hungry Heart is a React JS based online food ordering website that utilizes Swig
 -  Responsive for the small screen
 -  Implemented Lazy loading
 
-<br>
+## 📌 Live Site URL: <a href="https://hungry-heart-git-master-mhdamaan79.vercel.app/">**Visit Now** 🚀</a>
+✨ *"Feeding Souls, Nourishing Hearts: Hungry Heart's Culinary Art!*
 
 ## 📬 Connect With Me
 
