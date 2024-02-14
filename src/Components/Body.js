@@ -107,7 +107,7 @@ const Body = () => {
               setFilteredRestaurants(filteredRestro);
             }}
           >
-            <i class="fa-solid fa-clock pr-1" style={{ color: "#ffffff" }}></i>{" "}
+            <i className="fa-solid fa-clock pr-1" style={{ color: "#ffffff" }}></i>{" "}
             Delivery Time
           </button>
         </div>
@@ -125,7 +125,7 @@ const Body = () => {
             </h1>
             <a href="/">
               <button
-                class="middle none center rounded-lg bg-orange-500 py-2 md:py-4 px-4 md:px-8 font-sans text-base md:text-xl sm:font-semibold md:font-bold text-white shadow-md shadow-orange-500/20 transition-all hover:shadow-lg hover:shadow-orange-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none md-2 md:m-4"
+                className="middle none center rounded-lg bg-orange-500 py-2 md:py-4 px-4 md:px-8 font-sans text-base md:text-xl sm:font-semibold md:font-bold text-white shadow-md shadow-orange-500/20 transition-all hover:shadow-lg hover:shadow-orange-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none md-2 md:m-4"
                 data-ripple-light="true"
               >
                 See Restaurants near you{" "}

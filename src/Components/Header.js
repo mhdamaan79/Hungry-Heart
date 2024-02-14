@@ -80,7 +80,7 @@ const Header = () => {
       <div className="flex max-sm:pl-2 sm:gap-3 md:gap-6 lg:gap-12 justify-start items-center">
         <a
           href="#_"
-          class="whitespace-nowrap max-sm:mx-2 p-1 md:px-2.5 md:py-1.5 lg:px-5 lg:py-2.5 font-medium bg-white text-blue-500 rounded-lg text-sm cursor-default"
+          className="whitespace-nowrap max-sm:mx-2 p-1 md:px-2.5 md:py-1.5 lg:px-5 lg:py-2.5 font-medium bg-white text-blue-500 rounded-lg text-sm cursor-default"
         >
           {isOnline ? "✅ " + "Online" : "🔴 " + "Offline"}
         </a>
