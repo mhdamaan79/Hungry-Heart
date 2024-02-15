@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { swiggy_menu_api_URL } from "../constants";
 
 const useRestaurantMenu = (resId) => {
-  const [restaurantList, setRestaurantList] = useState(null);
+  const [restaurantList, setRestaurantList] = useState([]);
 
   useEffect(() => {
     getRestaurantInfo();
@@ -14,8 +14,8 @@ const useRestaurantMenu = (resId) => {
       const json = await data.json();
       // console.log(json.data);
       const itemCards =
-        json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card
-          ?.card?.itemCards;
+        json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
+      // console.log(itemCards);
       setRestaurantList(itemCards);
     } catch (error) {
       console.error(`Opps!!! Something went wrong ${error}`);
