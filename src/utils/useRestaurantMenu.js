@@ -12,10 +12,10 @@ const useRestaurantMenu = (resId) => {
     try {
       const data = await fetch(swiggy_menu_api_URL + resId);
       const json = await data.json();
-      // console.log(json.data);
+      console.log(json.data);
       const itemCards =
-        json?.data?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
-      // console.log(itemCards);
+        json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
+      console.log(itemCards);
       setRestaurantList(itemCards);
     } catch (error) {
       console.error(`Opps!!! Something went wrong ${error}`);
