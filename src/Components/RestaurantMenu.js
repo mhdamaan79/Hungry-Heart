@@ -17,8 +17,8 @@ const RestaurantMenu = () => {
     <ShimmerMenu />
   ) : (
     <div className="menu">
-      {restaurantMenuItemsCard.map((card) => (
-        <React.Fragment key={card?.card?.card?.id}>
+      {restaurantMenuItemsCard.map((card, index) => (
+        <React.Fragment key={index}>
           {card?.card?.card?.itemCards?.length > 0 && (
             <p className="text-xl text-[#3F4255] uppercase font-bold w-11/12 md:w-9/12 mx-auto pl-3 my-5 drop-shadow-lg">
               {card?.card?.card?.title} - ({card?.card?.card?.itemCards?.length}

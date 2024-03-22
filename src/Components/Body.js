@@ -6,6 +6,7 @@ import { swiggy_api_URL } from "../constants";
 import { Link } from "react-router-dom";
 import useOnline from "../utils/useOnline";
 import { filterData } from "../utils/helper";
+import { makeRequestThroughProxy } from "../Services/apiService";
 
 const Body = () => {
   const [searchText, setSearchText] = useState("");
@@ -18,17 +19,17 @@ const Body = () => {
 
   const getRestaurant = async () => {
     try {
-      const data = await fetch(swiggy_api_URL);
-      const json = await data.json();
-      // console.log(json);
-      // setAllRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-      // setFilteredRestaurants(json?.data?.cards[2]?.data?.data?.cards);
+      // Make a request using the CORS proxy function
+      const responseData = await makeRequestThroughProxy(swiggy_api_URL);
+      console.log(responseData);
+      // setAllRestaurants(responseData?.data?.cards[2]?.data?.data?.cards);
+      // setFilteredRestaurants(responseData?.data?.cards[2]?.data?.data?.cards);
       setAllRestaurants(
-        json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+        responseData?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants
       );
       setFilteredRestaurants(
-        json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
+        responseData?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
           ?.restaurants
       );
     } catch (error) {
@@ -102,12 +103,15 @@ const Body = () => {
             className="p-2 m-2 bg-amber-500 hover:bg-yellow-400 text-white rounded-md text-xs lg:text-lg md:text-md border-2 border-amber-300"
             onClick={() => {
               const filteredRestro = [...allRestaurants].sort((res1, res2) => {
-                return res1.info.deliveryTime - res2.info.deliveryTime;
+                return res1.info.sla.deliveryTime - res2.info.sla.deliveryTime;
               });
               setFilteredRestaurants(filteredRestro);
             }}
           >
-            <i className="fa-solid fa-clock pr-1" style={{ color: "#ffffff" }}></i>{" "}
+            <i
+              className="fa-solid fa-clock pr-1"
+              style={{ color: "#ffffff" }}
+            ></i>{" "}
             Delivery Time
           </button>
         </div>
