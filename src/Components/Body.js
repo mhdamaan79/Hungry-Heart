@@ -21,7 +21,7 @@ const Body = () => {
     try {
       // Make a request using the CORS proxy function
       const responseData = await makeRequestThroughProxy(swiggy_api_URL);
-      console.log(responseData);
+      // console.log(responseData);
       // setAllRestaurants(responseData?.data?.cards[2]?.data?.data?.cards);
       // setFilteredRestaurants(responseData?.data?.cards[2]?.data?.data?.cards);
       setAllRestaurants(

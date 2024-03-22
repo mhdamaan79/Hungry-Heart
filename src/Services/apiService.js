@@ -16,7 +16,8 @@ const makeRequestThroughProxy = async (
       url: requestUrl,
       headers: {
         "x-rapidapi-host": "cors-proxy4.p.rapidapi.com",
-        "x-rapidapi-key": `${process.env.REACT_APP_RAPID_API_KEY}`, // Using the environment variable
+        // "x-rapidapi-key": process.env.REACT_APP_RAPID_API_KEY, // Using the environment variable
+        "x-rapidapi-key": `9d053e1992msh0f5216930688ea0p1fb85bjsn14392c06825e`,
         "Content-Type": "application/json",
       },
       data: data,

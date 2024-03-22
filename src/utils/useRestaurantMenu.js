@@ -15,10 +15,10 @@ const useRestaurantMenu = (resId) => {
       const responseData = await makeRequestThroughProxy(
         swiggy_menu_api_URL + resId
       );
-      console.log(responseData);
+      // console.log(responseData);
       const itemCards =
         responseData?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
-      console.log(itemCards);
+      // console.log(itemCards);
       setRestaurantList(itemCards);
     } catch (error) {
       console.error(`Opps!!! Something went wrong ${error}`);
