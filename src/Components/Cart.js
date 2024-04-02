@@ -10,6 +10,10 @@ let keyCartItem = 1;
 const Cart = () => {
   const cartItems = useSelector((store) => store.cart.items);
 
+  const totalPrice = cartItems.reduce((accumulator, currentItem) => {
+    return accumulator + currentItem.info.price / 100;
+  }, 0);
+
   const dispatch = useDispatch();
 
   const handleClearCart = () => {
@@ -79,7 +83,7 @@ const Cart = () => {
               </div>
               <div className="flex justify-between text-sm my-3">
                 <p className="text-[#3F4255]">Sub Total</p>
-                <p className=" text-[#909090]">₹XXX</p>
+                <p className=" text-[#909090]">₹{totalPrice}</p>
               </div>
               <div className="flex justify-between text-sm my-3">
                 <p className="text-[#3F4255]">Shipping</p>
@@ -87,10 +91,12 @@ const Cart = () => {
               </div>
               <div className="flex justify-between text-md my-3">
                 <p className="text-[#3F4255] font-semibold">Total</p>
-                <p className=" text-[#909090] font-semibold">₹XXX</p>
+                <p className=" text-[#909090] font-semibold">
+                  ₹{totalPrice + 49}
+                </p>
               </div>
               <button className="h-12 w-full bg-black rounded-md text-white flex justify-center items-center text-xl font-semibold mt-5 hover:bg-slate-400 hover:text-black">
-                Pay ₹XXX
+                Pay ₹{totalPrice + 49}
               </button>
             </div>
           )}
