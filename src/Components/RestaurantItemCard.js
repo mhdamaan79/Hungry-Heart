@@ -54,7 +54,7 @@ const RestaurantItemCard = (props) => {
           <img
             className="w-52 md:h-32 h-24 object-cover rounded-md"
             src={
-              "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/" +
+              "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fill/" +
               props?.item?.card?.info?.imageId
             }
           />

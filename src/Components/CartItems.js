@@ -15,7 +15,7 @@ const CartItems = (props) => {
         <div className="flex items-center gap-6">
           <img
             src={
-              "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/" +
+              "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/" +
               props?.info?.imageId
             }
             alt=""
